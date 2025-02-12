@@ -1,0 +1,15 @@
+Exercício 1: Cadastro e Listagem de Clientes
+Cenário: Uma loja virtual precisa cadastrar clientes e
+listar seus dados.
+Dados de Entrada:
+● Nome
+● Email
+● Tipo do cliente (Pessoa Física ou Jurídica)
+
+O que Manipular?
+● Criar um modelo que suporta múltiplos tipos de
+clientes sem alterar a estrutura principal.
+● Cada tipo de cliente deve ter comportamentos
+distintos, como exibição formatada do CPF/CNPJ.
+● Listar todos os clientes cadastrados utilizando um
+método funcional.

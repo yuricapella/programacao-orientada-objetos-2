@@ -1,0 +1,43 @@
+A partir do java 7, nao precisa colocar mais String tambem em ArrayList<>()
+List<String> list = new ArrayList<>();
+
+Começaram a simplificar mais o java.
+
+Antigamente era List list e precisava fazer o casting
+String s = (String) list.get(0);
+
+Fizeram o generics para evitar erros
+List<String> padroniza a lista.
+<> = Generic
+
+Faz com que a classe só use determinado tipo.
+public class Box<T>{
+
+}
+
+Em Java, algumas convenções são amplamente utilizadas ao
+nomear tipos genéricos:
+E - Element (usado exclusivamente pelo Java Collections Framework)
+N
+T
+
+
+
+S,U, V etc. - 2nd,3rd,4th types
+
+T: Um tipo genérico qualquer.
+E: Um elemento de uma coleção.
+K: Chave em um mapa.
+V: Valor em um mapa.
+S, U, V, W, ...: Tipos genéricos adicionais, geralmente representando o 2º, 3º, 4º tipos, etc.
+N: Às vezes usado para números, embora seja mais comum ver algo como T extends Number se for necessário.
+
+
+Podemos definir tipos genericos e também metodos genericos
+
+public interface Comparable<T>{
+    public int compareTo(T o);
+}
+
+
+

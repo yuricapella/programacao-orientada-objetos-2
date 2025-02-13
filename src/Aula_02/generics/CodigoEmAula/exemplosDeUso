@@ -1,0 +1,213 @@
+-------------------------------
+T I P O S   G E N E R I C O S   E X E M P L O S
+
+1. K e V – Chave e Valor
+Utilizados para representar, por exemplo, os tipos em um mapa ou em uma classe que contenha pares (key/value):
+
+1. Classe Genérica "Par"
+public class Par<K, V> {
+    private K chave;
+    private V valor;
+
+    public Par(K chave, V valor) {
+        this.chave = chave;
+        this.valor = valor;
+    }
+
+    public K getChave() {
+        return chave;
+    }
+
+    public void setChave(K chave) {
+        this.chave = chave;
+    }
+
+    public V getValor() {
+        return valor;
+    }
+
+    public void setValor(V valor) {
+        this.valor = valor;
+    }
+
+    @Override
+    public String toString() {
+        return "Par{chave=" + chave + ", valor=" + valor + "}";
+    }
+}
+
+Exemplo de uso:
+
+java
+public class Main {
+    public static void main(String[] args) {
+        // Usando String como chave e Integer como valor:
+        Par<String, Integer> par = new Par<>("Idade", 30);
+        System.out.println(par);
+    }
+}
+
+-------------------------------
+
+2. T – Tipo Genérico Qualquer
+Geralmente usado para classes que "envolvem" ou armazenam um objeto de qualquer tipo:
+
+public class Caixa<T> {
+    private T conteudo;
+
+    public Caixa(T conteudo) {
+        this.conteudo = conteudo;
+    }
+
+    public T getConteudo() {
+        return conteudo;
+    }
+
+    public void setConteudo(T conteudo) {
+        this.conteudo = conteudo;
+    }
+
+    @Override
+    public String toString() {
+        return "Caixa{conteudo=" + conteudo + "}";
+    }
+}
+
+Exemplo de uso:
+
+java
+public class Main {
+    public static void main(String[] args) {
+        Caixa<String> caixaDeTexto = new Caixa<>("Olá, mundo!");
+        System.out.println(caixaDeTexto);
+    }
+}
+
+
+-------------------------------
+3. E – Elemento (usado em coleções)
+Quando você está definindo, por exemplo, uma interface ou classe para coleções, é comum usar E para indicar um elemento:
+
+public interface Colecao<E> {
+    void adicionar(E elemento);
+    E obter(int indice);
+}
+
+Exemplo de implementação:
+
+public class ListaSimples<E> implements Colecao<E> {
+    private List<E> lista = new ArrayList<>();
+
+    @Override
+    public void adicionar(E elemento) {
+        lista.add(elemento);
+    }
+
+    @Override
+    public E obter(int indice) {
+        return lista.get(indice);
+    }
+}
+
+
+-------------------------------
+4. S, U, V, W, ... – Tipos Genéricos Adicionais
+Usados quando a classe precisa trabalhar com mais de um tipo genérico, representando, por exemplo, o 2º, 3º, 4º tipos, etc.
+
+public class Triple<T, U, V> {
+    private T primeiro;
+    private U segundo;
+    private V terceiro;
+
+    public Triple(T primeiro, U segundo, V terceiro) {
+        this.primeiro = primeiro;
+        this.segundo = segundo;
+        this.terceiro = terceiro;
+    }
+
+    public T getPrimeiro() {
+        return primeiro;
+    }
+
+    public U getSegundo() {
+        return segundo;
+    }
+
+    public V getTerceiro() {
+        return terceiro;
+    }
+
+    @Override
+    public String toString() {
+        return "Triple{" +
+               "primeiro=" + primeiro +
+               ", segundo=" + segundo +
+               ", terceiro=" + terceiro +
+               "}";
+    }
+}
+
+Exemplo de uso:
+
+public class Main {
+    public static void main(String[] args) {
+        Triple<String, Integer, Boolean> triple =
+            new Triple<>("Teste", 100, true);
+        System.out.println(triple);
+    }
+}
+
+
+-------------------------------
+
+5. N – Representa Número
+Embora não seja uma convenção amplamente adotada para nomear um parâmetro genérico (muitas vezes utiliza-se T com restrição), você pode usá-lo para representar um número, geralmente com uma restrição:
+
+
+public class Calculadora<N extends Number> {
+    public double somar(N a, N b) {
+        return a.doubleValue() + b.doubleValue();
+    }
+}
+
+Exemplo de uso:
+
+public class Main {
+    public static void main(String[] args) {
+        Calculadora<Integer> calc = new Calculadora<>();
+        System.out.println("Soma: " + calc.somar(10, 20));
+    }
+}
+
+------------------
+
+Resumo das Convenções:
+T: Um tipo genérico qualquer.
+E: Um elemento de uma coleção.
+K: Uma chave em estruturas de dados, como em Map<K, V>.
+V: Um valor associado à chave em um mapa.
+S, U, V, W, ...: Tipos genéricos adicionais (2º, 3º, 4º, etc.).
+N: Usado para representar números (geralmente com restrição extends Number).
+
+
+
+-------------------------------
+
+
+
+
+-------------------------------
+
+
+
+
+-------------------------------
+
+
+
+
+-------------------------------
+
+
+
+

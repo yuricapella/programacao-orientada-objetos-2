@@ -1,4 +1,4 @@
-package Aula_01.interfaces.Veiculos;
+package Aula_01.interfaces.CodigoEmAula.Veiculos;
 
 public abstract class Veiculo {
     private String nome = "Barco";

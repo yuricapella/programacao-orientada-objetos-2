@@ -1,4 +1,4 @@
-package Aula_02.generics.Exercicios.Exercicio01;
+package Aula_02.Exercicios.Exercicio01;
 
 public class CarrinhoMain {
     public static void main(String[] args) {

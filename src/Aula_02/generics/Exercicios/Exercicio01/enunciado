@@ -1,0 +1,10 @@
+Exercício 1: Carrinho de compras e pagamento
+1. Criação de um carrinho de compras genérico:
+● Implemente uma classe Carrinho<T> que permita
+armazenar itens genéricos.
+● Deve conter métodos para adicionar e remover itens do
+carrinho.
+● Deve haver um método que retorne a quantidade total de
+itens.
+Dica: Utilize uma List<T> para armazenar os itens do
+carrinho.

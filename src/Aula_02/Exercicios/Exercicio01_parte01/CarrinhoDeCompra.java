@@ -1,4 +1,4 @@
-package Aula_02.Exercicios.Exercicio01;
+package Aula_02.Exercicios.Exercicio01_parte01;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,14 +18,13 @@ public class CarrinhoDeCompra<T> {
         this.lista.remove(item);
     }
 
-    public List<T> getLista() {
-        return lista;
+    public int getQuantidadeTotal() {
+        return lista.size();
     }
+
 
     @Override
     public String toString() {
-        return "Carrinho{" +
-                lista.toString() +
-                '}';
+        return lista.toString();
     }
 }

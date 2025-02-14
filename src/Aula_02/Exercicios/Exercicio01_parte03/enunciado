@@ -1,0 +1,8 @@
+Exercício 1: Carrinho de compras e pagamento
+3. Gestão de pedidos genérica:
+● Implemente uma classe Pedido<K, V> que armazene um
+identificador do pedido e uma lista de itens.
+● O identificador deve ser genérico (K), podendo ser um
+número ou código alfanumérico.
+● A lista de itens deve ser um conjunto de objetos (V).
+Dica: Utilize um Map<K, List<V>> para armazenar os pedidos.

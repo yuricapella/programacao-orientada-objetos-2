@@ -1,0 +1,10 @@
+Exercício 1: Carrinho de compras e pagamento
+2. Sistema de pagamento genérico:
+● Crie uma interface Pagamento<T> com um método
+processarPagamento(T valor).
+● Implemente duas classes PagamentoCartao e PagamentoPix
+que aceitem valores diferentes.
+● Simule uma transação processando um pagamento com cada
+método.
+Dica: Utilize T extends Number para garantir que o valor
+seja numérico.

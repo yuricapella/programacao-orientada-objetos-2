@@ -1,4 +1,4 @@
-package Aula_01.interfaces.Veiculos;
+package Aula_01.interfaces.CodigoEmAula.Veiculos;
 
 /*
 Colocando o metodo default, conseguimos declarar o metodo, se tira-lo dará erro.

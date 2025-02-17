@@ -1,0 +1,23 @@
+Exercício 3: Envio e cálculo de frete
+Refatore o código a seguir utilizando os princípios :
+● Responsabilidade Única (SRP)
+● Aberto/Fechado (OCP)
+Exercícios
+SOLID - SRP e OCP
+class CarrinhoDeCompras {
+ private List<String> itens = new ArrayList<>();
+ private double pesoTotal;
+ public void adicionarItem (String item, double peso) {
+ itens.add(item);
+ pesoTotal += peso;
+ }
+ public double calcularFrete () {
+ if (pesoTotal < 5) {
+ return 10.0;
+ } else if (pesoTotal < 10) {
+ return 20.0;
+ } else {
+ return 30.0;
+ }
+ }
+}

@@ -1,0 +1,27 @@
+Exercício 2: Carrinho de compras e descontos
+Refatore o código a seguir utilizando os princípios :
+● Responsabilidade Única (SRP)
+● Aberto/Fechado (OCP)
+Exercícios
+SOLID - SRP e OCP
+class CarrinhoDeCompras {
+ private List<Double> precos = new ArrayList<>();
+ public void adicionarItem(double preco) {
+ precos.add(preco);
+ }
+ public double calcularTotal() {
+ double total = 0;
+ for (double preco : precos) {
+ total += preco;
+ }
+ return total;
+ }
+ public double aplicarDesconto(String tipo) {
+ if (tipo.equals("natal")) {
+ return calcularTotal() * 0.9; // 10% de desconto
+ } else if (tipo.equals("black_friday")) {
+ return calcularTotal() * 0.8; // 20% de desconto
+ }
+ return calcularTotal();
+ }
+}

@@ -1,0 +1,21 @@
+Exercício 1: Carrinho de compras e pagamento
+Refatore o código a seguir utilizando os princípios :
+● Responsabilidade Única (SRP)
+● Aberto/Fechado (OCP)
+Exercícios
+SOLID - SRP e OCP
+class CarrinhoDeCompras {
+ private List<String> itens = new ArrayList<>();
+ public void adicionarItem (String item) {
+ itens.add(item);
+ }
+ public void pagar(String metodo) {
+ if (metodo.equals("cartao")) {
+ System.out.println("Pagando com cartão de crédito..." );
+ } else if (metodo.equals("paypal")) {
+ System.out.println("Pagando com PayPal..." );
+ } else {
+ System.out.println("Método de pagamento não suportado." );
+ }
+ }
+}

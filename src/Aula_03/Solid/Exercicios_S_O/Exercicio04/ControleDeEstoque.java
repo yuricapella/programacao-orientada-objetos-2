@@ -25,20 +25,22 @@ public class ControleDeEstoque {
     }
 
     public static void atualizarQuantidade(int id, int quantidade) {
-        Produto produto = procurarProduto(id);
+        Produto produto = listarProduto(id);
         produto.setQuantidade(quantidade);
     }
 
-    public static Produto procurarProduto(int id) {
-        for (Produto produto : produtosEstoque) {
-            if (id == produto.getIdentificador()){
-                return produto;
+    public static Produto listarProduto(int id) {
+        Produto produto = null;
+        for (Produto produtoEstoque : produtosEstoque) {
+            if(produtoEstoque.getIdentificador() == id) {
+                produto = produtoEstoque;
+                break;
             }
         }
-        return null;
+        return produto;
     }
 
-    public static List<Produto> listarProdutos() {
+    public static List<Produto> listarProduto() {
         for (Produto produto : produtosEstoque) {
             System.out.println(produto);
         }

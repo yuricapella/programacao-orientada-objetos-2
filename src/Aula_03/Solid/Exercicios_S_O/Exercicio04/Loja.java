@@ -16,7 +16,8 @@ public class Loja {
         ControleDeEstoque.adicionarEstoque(movel);
         ControleDeEstoque.adicionarEstoque(papelaria);
 
-        ControleDeEstoque.listarProdutos();
+        ControleDeEstoque.listarProduto();
+
 
         System.out.println("-------------------------------");
         System.out.println("Altera quantidade dos produtos\n");
@@ -25,12 +26,13 @@ public class Loja {
         ControleDeEstoque.atualizarQuantidade(2,99);
         ControleDeEstoque.atualizarQuantidade(3,99);
 
-        ControleDeEstoque.listarProdutos();
+        ControleDeEstoque.listarProduto();
+
         System.out.println("-------------------------------");
         System.out.println("Remove um produto\n");
 
         ControleDeEstoque.removerEstoque(papelaria);
-        ControleDeEstoque.listarProdutos();
+        ControleDeEstoque.listarProduto();
 
         System.out.println("-------------------------------");
         System.out.println("CÓDIGOS A MAIS\n");
@@ -39,13 +41,18 @@ public class Loja {
         List<Produto> produtos = GeradorDeProdutos.gerarListaDeProdutos(2,2,2);
 
         ControleDeEstoque.adicionarEstoque(produtos);
-        ControleDeEstoque.listarProdutos();
+        ControleDeEstoque.listarProduto();
 
         System.out.println("-------------------------------");
         System.out.println("Remove produtos em massa\n");
 
         ControleDeEstoque.removerEstoque(produtos);
-        ControleDeEstoque.listarProdutos();
+        ControleDeEstoque.listarProduto();
+
+        System.out.println("-------------------------------");
+        System.out.println("Lista um produto especifico por ID\n");
+
+        System.out.println(ControleDeEstoque.listarProduto(1));
 
     }
 }

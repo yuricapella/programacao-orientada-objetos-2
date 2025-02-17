@@ -1,0 +1,14 @@
+Exercício 6: Estorno de Pagamento
+Cenário: Um sistema de pagamentos precisa gerenciar
+estornos de diferentes formas de pagamento. O estorno pode
+ser realizado via cartão de crédito, transferência bancária
+ou outro método. Cada método de pagamento tem uma forma
+diferente de processar o estorno.
+Tarefas:
+1. Criar uma estrutura que represente um pagamento.
+2. Criar um mecanismo que processe estornos de diferentes
+formas de pagamento.
+3. Permitir que novos métodos de pagamento sejam
+adicionados sem modificar o código existente.
+4. Implementar um sistema que registre os estornos
+realizados.

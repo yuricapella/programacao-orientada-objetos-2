@@ -1,0 +1,14 @@
+Exercício 5: Atraso de Entrega
+Cenário: Uma empresa de logística deseja monitorar a
+entrega de pedidos. Cada entrega pode ter um status como
+"Em trânsito", "Entregue" ou "Atrasada". O sistema deve ser
+capaz de lidar com diferentes tipos de entregas, como envio
+normal ou expresso.
+Tarefas:
+1. Criar uma estrutura que represente uma entrega e seu
+status.
+2. Criar um método que atualize o status de uma entrega.
+3. O sistema deve permitir a adição de novos tipos de
+entrega sem modificar o código existente.
+4. Criar um mecanismo para registrar quando uma entrega
+está atrasada.

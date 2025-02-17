@@ -1,0 +1,14 @@
+Exercício 4: Controle de Estoque
+Cenário: Uma loja deseja gerenciar seu estoque de
+diferentes tipos de produtos. Cada produto tem um
+identificador, nome e quantidade disponível. O sistema deve
+permitir a adição de novos produtos e atualização da
+quantidade.
+Tarefas:
+1. Criar uma estrutura para armazenar e gerenciar o
+estoque.
+2. Permitir a adição de novos produtos ao estoque.
+3. Criar um método para atualizar a quantidade de um
+produto existente.
+4. Permitir o uso do sistema para diferentes tipos de
+produtos.

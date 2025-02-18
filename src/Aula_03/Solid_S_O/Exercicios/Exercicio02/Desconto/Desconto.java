@@ -1,6 +1,6 @@
-package Aula_03.Solid.Exercicios_S_O.Exercicio02.Desconto;
+package Aula_03.Solid_S_O.Exercicios.Exercicio02.Desconto;
 
-import Aula_03.Solid.Exercicios_S_O.Exercicio02.Pagamento.Pagamento;
+import Aula_03.Solid_S_O.Exercicios.Exercicio02.Pagamento.Pagamento;
 
 public abstract class Desconto {
     public double valorDesconto;

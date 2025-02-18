@@ -1,4 +1,4 @@
-package Aula_03.Solid.Exercicios_S_O.Exercicio02.Pagamento;
+package Aula_03.Solid_S_O.Exercicios.Exercicio02.Pagamento;
 
 import java.util.ArrayList;
 import java.util.List;

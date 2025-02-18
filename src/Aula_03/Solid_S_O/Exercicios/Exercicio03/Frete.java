@@ -1,4 +1,4 @@
-package Aula_03.Solid.Exercicios_S_O.Exercicio03;
+package Aula_03.Solid_S_O.Exercicios.Exercicio03;
 
 public class Frete {
 

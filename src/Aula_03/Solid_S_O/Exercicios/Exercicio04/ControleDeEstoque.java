@@ -1,12 +1,12 @@
-package Aula_03.Solid.Exercicios_S_O.Exercicio04;
+package Aula_03.Solid_S_O.Exercicios.Exercicio04;
 
-import Aula_03.Solid.Exercicios_S_O.Exercicio04.Produtos.Produto;
+import Aula_03.Solid_S_O.Exercicios.Exercicio04.Produtos.Produto;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class ControleDeEstoque {
-    public static List<Produto> produtosEstoque = new ArrayList<>();
+    private static List<Produto> produtosEstoque = new ArrayList<>();
 
     public static void adicionarEstoque(Produto produto) {
         produtosEstoque.add(produto);

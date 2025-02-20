@@ -6,6 +6,5 @@ public class Main {
         Notificacao notificacao = new Notificacao(comunicacaoService);
 
         notificacao.enviarNotificacao("Notificação enviada!!");
-
     }
 }

@@ -1,4 +1,4 @@
-package Aula_03.Solid.Exercicios_S_O.Exercicio04.Produtos;
+package Aula_03.Solid_S_O.Exercicios.Exercicio04.Produtos;
 
 public abstract class Produto {
     private long identificador;

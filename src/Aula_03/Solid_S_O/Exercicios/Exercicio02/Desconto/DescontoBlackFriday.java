@@ -1,4 +1,4 @@
-package Aula_03.Solid.Exercicios_S_O.Exercicio02.Desconto;
+package Aula_03.Solid_S_O.Exercicios.Exercicio02.Desconto;
 
 public class DescontoBlackFriday extends Desconto {
     public DescontoBlackFriday(double valorDesconto) {

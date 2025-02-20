@@ -1,6 +1,6 @@
-package Aula_03.Solid.Exercicios_S_O.Exercicio04;
+package Aula_03.Solid_S_O.Exercicios.Exercicio04;
 
-import Aula_03.Solid.Exercicios_S_O.Exercicio04.Produtos.*;
+import Aula_03.Solid_S_O.Exercicios.Exercicio04.Produtos.*;
 
 import java.util.List;
 

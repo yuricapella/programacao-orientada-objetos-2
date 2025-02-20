@@ -5,7 +5,6 @@ public class Main {
         ComunicacaoService comunicacaoService = new EmailService();
         Notificacao notificacao = new Notificacao(comunicacaoService);
 
-        notificacao.enviar("Notificação enviada!!");
-
+        notificacao.enviarNotificacao("Notificação enviada!!");
     }
 }

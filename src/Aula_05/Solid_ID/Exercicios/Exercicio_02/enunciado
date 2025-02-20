@@ -1,0 +1,26 @@
+Exercício 2: Operador de Máquina
+Refatore o código aplicando e separe as responsabilidades
+para que um trabalhador não seja forçado a implementar
+métodos que não fazem sentido para ele.
+
+● Segregação de Interface (ISP)
+Exercícios
+SOLID - ISP e DIP
+class OperadorDeMaquina implements Trabalhador {
+
+ @Override
+ public void trabalhar() {
+ System.out.println("Operador está trabalhando..." );
+ }
+
+ @Override
+ public void fazerPausa() {
+ System.out.println("Operador está fazendo uma pausa..." );
+ }
+
+ @Override
+ public void programar() {
+ throw new UnsupportedOperationException ("Operadores de
+máquina não programam!" );
+ }
+}

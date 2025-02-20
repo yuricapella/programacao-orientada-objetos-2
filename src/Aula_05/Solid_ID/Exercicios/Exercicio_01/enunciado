@@ -1,0 +1,18 @@
+Exercício 1: Email Notification
+Refatore o código para que Notificacao não dependa
+diretamente de EmailService, mas sim de uma abstração
+(interface).
+● Inversão de Dependência (DIP)
+Exercícios
+SOLID - ISP e DIP
+class EmailService {
+ public void enviarEmail (String mensagem) {
+ System.out.println("Enviando e-mail: " + mensagem);
+ }
+}
+class Notificacao {
+ private EmailService emailService = new EmailService ();
+ public void enviarNotificacao (String mensagem) {
+ emailService.enviarEmail (mensagem);
+ }
+}
